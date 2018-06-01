@@ -33,7 +33,7 @@ include 'includes/connection.php';
             <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
               <div class="team-member clearfix">
                 <div class="team-thumb">
-                  <img alt="" src="admin/<?php echo $row['img_loc']; ?>" class="center img-fullwidth" style="height: 400px; width: 200px;">
+                  <img alt="" src="lock/<?php echo $row['img_loc']; ?>" class="center img-fullwidth" style="height: 400px; width: 200px;">
                   <div class="overlay">
                     <div class="content">
                       <p> <?php echo $row['designation'];  ?></p>

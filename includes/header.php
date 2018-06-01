@@ -53,7 +53,16 @@ unset($_SESSION['msg'])
 <!-- Revolution Slider 5.x SCRIPTS -->
 <script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
 <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117695762-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-117695762-1');
+</script>
 
 </head>
 <body class="boxed-layout bg-img-fixed pt-40 pb-40 pt-sm-0" data-bg-img="images/pattern/p14.png">

@@ -18,7 +18,7 @@ include 'includes/connection.php';
           <div class="row"> 
             <div class="col-md-12">
               <h3 class="title text-white">MEET OUR ALUMNI'S                        
-                <img src="images/l.png" style="height: 30px; width: 30px;">
+               
 </h3>
             </div>
           </div>

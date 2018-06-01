@@ -61,8 +61,7 @@ Owing to these partnerships and some other critical factors, Enactus Nigeria has
 			<h4 class="text-theme-colored">action— </h4><p class="text-white"> the experience of social impact that sparks social enterprise.</p>
 
 			<h4 class="text-theme-colored">us— </h4><p class="text-white"> student, academic and business leaders collaborating to create a better world.</p>
-                              <img src="images/a.png" style="height: 30px; width: 30px;">
-
+                 
           </div>
 
 

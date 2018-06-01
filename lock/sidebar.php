@@ -76,6 +76,7 @@
             <li><a href="section.php"><i class="fa fa-circle-o"></i> Section</a></li>
             <li><a href="viewtestimony.php"><i class="fa fa-circle-o"></i>Testimony</a></li>
             <li><a href="viewpartners.php"><i class="fa fa-circle-o"></i> Partners</a></li>
+            <li><a href="viewads.php"><i class="fa fa-circle-o"></i> ads</a></li>
             <li class="treeview">
               <a href="#"><i class="fa fa-circle-o"></i> People
                 <span class="pull-right-container">

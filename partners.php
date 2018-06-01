@@ -29,7 +29,7 @@ include 'includes/connection.php';
 	          		<div class="col-xs-2">
 			            <div class="team-member clearfix">
 			                <div class="team-thumb">
-			                  <img alt="" src="admin/<?php echo $row['img_loc']; ?>" class="img-fullwidth">
+			                  <img alt="" src="lock/<?php echo $row['img_loc']; ?>" class="img-fullwidth">
 			                </div>
 			               
 			            </div>

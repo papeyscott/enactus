@@ -49,13 +49,13 @@ include_once('topheader.php');
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-               <?php
-                      $con = mysqli_connect("localhost","root","");
+                <?php
+                      $con = mysqli_connect("localhost","enactuso_root","Sife4words.");
                       if (!$con) {
                         die('Could not connect: ' . mysql_error());
                       }
 
-                      mysqli_select_db($con, "enactus");
+                      mysqli_select_db($con, "enactuso_enactusweb");
 
                       $result = mysqli_query($con, "select count(1) FROM campus");
                       $row = mysqli_fetch_array($result);

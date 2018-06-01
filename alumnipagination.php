@@ -1,7 +1,7 @@
 <?php
 
 
-							$connect = mysqli_connect("localhost", "root", "", "enactus");
+							$connect = mysqli_connect("localhost", "enactuso_root", "Sife4words.", "enactuso_enactusweb");
 
 							$record_per_page = 12;
 							$page = '';
@@ -32,7 +32,7 @@
               <article class="post clearfix mb-30 bg-lighter">
                 <div class="entry-header">
                   <div class="post-thumb thumb"> 
-                    <img src="Admin/<?php echo $row['img_loc']; ?>" alt="" class="img-responsive img-fullwidth" style="height: 200px; width: 350px;"> 
+                    <img src="lock/<?php echo $row['img_loc']; ?>" alt="" class="img-responsive img-fullwidth" style="height: 200px; width: 350px;"> 
                   </div>
                 </div>
                 <div class="entry-content p-20 pr-10">

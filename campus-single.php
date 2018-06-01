@@ -46,7 +46,7 @@ $item = Utils::getCampusByID($pdo, $sfid);
             <div class="blog-posts single-post">
               <article class="post clearfix mb-0">
                 <div class="entry-header">
-                  <div class="post-thumb thumb"> <img src="Admin/<?php echo $row['img_loc']; ?>" alt="" class="img-responsive img-fullwidth"> </div>
+                  <div class="post-thumb thumb"> <img src="lock/<?php echo $row['img_loc']; ?>" alt="" class="img-responsive img-fullwidth"> </div>
                 </div>
                 <div class="entry-content">
                   <div class="entry-meta media no-bg no-border mt-15 pb-20">

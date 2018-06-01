@@ -47,7 +47,7 @@ $item = Utils::getPartnershipByID($pdo, $sfid);
               <article class="post clearfix mb-0">
                 <div class="entry-header">
                   <div class="post-thumb thumb" style="height:400px"> 
-                    <img src="admin/<?php echo $row['img_loc']; ?>" alt="" class="img-responsive img-fullwidth">
+                    <img src="lock/<?php echo $row['img_loc']; ?>" alt="" class="img-responsive img-fullwidth">
                   </div>
                 </div>
                 <div class="entry-content">

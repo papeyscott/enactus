@@ -36,38 +36,46 @@ include 'includes/connection.php';
           </div>
         </div>
       </div>
-    </section><br><br>
-
+    </section>
+<br>
 
         <!-- Section: Causes -->
+  
+
+   
+ <!-- Section: Countdown  -->
+    <section>
+      <div class="container pt-0 pb-0">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                       <?php 
+                                      $stmt = $pdo->prepare("SELECT * FROM ads");
+                                      $stmt->execute();
+                                      while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+
+                              ?>
+                
+              <div class="item">
+                <img src="lock/<?php echo $row['img_loc']; ?>" alt="">
+              </div>
+            </div>
+                     <?php  } ?>
+           
+          </div>
+        </div>
+      </section>
+
+
+  </div>
+  <!-- end main-content -->
+<br><br>
     <!-- Start main-content -->
   <div class="main-content">
     <?php
     include 'carosel.php';
 
     ?>
-
-
-   
-
-   
-<br><br>
-  
-
-    
-    <!-- Section: Donors Say -->
-    <section>
-      <div class="container pt-60 pb-60">
-
-        <div class="row">
-          <img src="images/banner.jpg">
-        </div>
-      </div>
-    </section>
-
-
-  </div>
-  <!-- end main-content -->
 
   <br><br>
   <?php

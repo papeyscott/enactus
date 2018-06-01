@@ -40,7 +40,7 @@ include 'includes/connection.php';
 
             <div class="col-sm-6 col-md-3 mb-30">
               <div class="team box-hover-effect effect3 border-1px border-bottom-theme-color-2px sm-text-center maxwidth400 mb-sm-30">
-                <div class="thumb"><img class="img-fullwidth" src="admin/<?php echo $row['img_loc']; ?>" alt="" style="height: 250px; width: 400px;"></div>
+                <div class="thumb"><img class="img-fullwidth" src="lock/<?php echo $row['img_loc']; ?>" alt="" style="height: 250px; width: 400px;"></div>
                 <div class="content p-20 text-center">
                   <h4 class="name mb-0 mt-0"><a class="text-theme-colored" href="#"><?php echo $row['name'];  ?></a></h4>
                   <p>Volunteer Since - <?php echo $row['year'];  ?></p>

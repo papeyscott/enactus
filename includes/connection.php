@@ -1,8 +1,8 @@
 <?php
 
-	define("DBNAME", "enactus");
-	define("DBUSER", "root");
-	define("DBPASS", "");
+	define("DBNAME", "enactuso_enactusweb");
+	define("DBUSER", "enactuso_root");
+	define("DBPASS", "Sife4words.");
 	define("DBHOST", "localhost");
 
 	try {

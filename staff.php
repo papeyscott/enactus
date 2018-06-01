@@ -35,7 +35,7 @@ include 'includes/connection.php';
             <div class="col-xs-12 col-sm-6 col-md-4 mb-30">
               <div class="team-member clearfix">
                 <div class="team-thumb">
-                  <img alt="" src="admin/<?php echo $row['img_loc']; ?>" class="img-fullwidth">
+                  <img alt="" src="lock/<?php echo $row['img_loc']; ?>" class="img-fullwidth">
                   <div class="overlay">
                     <div class="content">
                       <h4>Position: <?php echo $row['position'];  ?></h4>

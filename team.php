@@ -31,10 +31,10 @@ include 'includes/connection.php';
 
                     ?>
 
-            <div class="col-xs-12 col-sm-6 col-md-3 mb-30">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-30">
               <div class="team-member clearfix">
                 <div class="team-thumb">
-                  <img alt="" src="admin/<?php echo $row['img_loc']; ?>" class="center img-fullwidth" >
+                  <img alt="" src="lock/<?php echo $row['img_loc']; ?>" class="center img-fullwidth" >
                   <div class="overlay">
                     <div class="content">
                       <h4>Faculty Adviser:<br> <?php echo $row['fa1'];  ?><br>

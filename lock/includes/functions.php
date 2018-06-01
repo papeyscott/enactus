@@ -1036,4 +1036,64 @@ class Utils {
 			$stmt->execute();
 		}
 
+
+		//Partner
+
+		public static function addAds($dbconn, $input){
+			$stmt = $dbconn->prepare("INSERT INTO ads(img_loc) 
+				VALUES(:loc)");
+
+			$data = [ 
+				":loc" =>$input['loc']
+			];
+
+			$stmt->execute($data);
+		}
+
+		public static function viewAds($dbconn){
+			$result = "";
+
+			$stmt = $dbconn->prepare("SELECT ads_id, img_loc FROM ads");
+			$stmt->execute();
+			while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
+				$result .= '<tr><td scope="row">'.$row[0].'</td>
+							<td><img src="'.$row['img_loc'].'" height="40" width="60"></td>
+							<th scope="col"><a href="editads.php?id='.$row[0].'"><span class="btn btn-sm btn-warning">EDIT</span></a></th scope="col">
+								<th scope="col"><a href="deleteads.php?id='.$row[0].'"><span class="btn btn-sm btn-danger">DELETE</span></a></th scope="col"></tr>';
+
+			}
+
+			return $result;
+		}
+
+
+		public static function updateAds($dbconn, $input){
+			$stmt = $dbconn->prepare("UPDATE ads SET year=:n WHERE partner_id=:stid");
+
+			$data = [
+						':n' =>$input['year'],
+						':stid' =>$input['id']
+					];
+
+			$stmt->execute($data);
+
+		}
+
+		public static function deleteAds($dbconn, $input){
+			$stmt = $dbconn->prepare("DELETE FROM ads WHERE ads_id = :sid");
+			$stmt->bindParam(":sid", $input);
+
+			$stmt->execute();
+		}
+
+		public static function getAdsByID($dbconn, $sf_id){
+			$stmt = $dbconn->prepare("SELECT * FROM ads WHERE ads_id=:sid");
+			$stmt->bindParam(":sid", $sf_id);
+
+			$stmt->execute();
+			$row = $stmt->fetch(PDO::FETCH_BOTH);
+
+			return $row;
+		}
+
 }

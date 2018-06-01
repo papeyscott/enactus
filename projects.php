@@ -41,7 +41,7 @@ include 'includes/connection.php';
                   <article class="post clearfix mb-30 bg-lighter">
                     <div class="entry-header">
                       <div class="post-thumb thumb" style="height:400px; width: 400px"> 
-                        <img src="admin/<?php echo $row['img_loc']; ?>" alt="" class="img-responsive img-fullwidth"> 
+                        <img src="lock/<?php echo $row['img_loc']; ?>" alt="" class="img-responsive img-fullwidth"> 
                       </div>
                     </div>
                     <div class="entry-content p-20 pr-10">

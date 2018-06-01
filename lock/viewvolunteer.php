@@ -21,12 +21,12 @@ include_once('topheader.php');
           <div class="small-box bg-green">
             <div class="inner">
                <?php
-                      $con = mysqli_connect("localhost","root","");
+                       $con = mysqli_connect("localhost","enactuso_root","Sife4words.");
                       if (!$con) {
                         die('Could not connect: ' . mysql_error());
                       }
 
-                      mysqli_select_db($con, "enactus");
+                      mysqli_select_db($con, "enactuso_enactusweb");
 
                       $result = mysqli_query($con, "select count(1) FROM volunteer");
                       $row = mysqli_fetch_array($result);
